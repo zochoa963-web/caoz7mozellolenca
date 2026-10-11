@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3ead7;
+  --color-ink: #1c3f86;
+  --color-ember: #c4511a;
+  --color-inkblack: #1a1814;
+  --color-muted: #4a453c;
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --font-sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-inkblack);
+    font-family: var(--font-sans);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 31px,
+      color-mix(in srgb, var(--color-ink) 13%, transparent) 32px
+    );
+    background-attachment: fixed;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  input[type="range"] {
+    accent-color: var(--color-ink);
+    height: 2.75rem;
+    width: 100%;
+  }
+
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@keyframes tps-flame {
+  0%,
+  100% {
+    transform: scaleY(1);
+    opacity: 0.88;
+  }
+  50% {
+    transform: scaleY(1.16);
+    opacity: 1;
+  }
+}
+
+.tps-flame {
+  transform-origin: center top;
+  animation: tps-flame 0.42s ease-in-out infinite;
+}
+
+@keyframes tps-heat {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.62;
+  }
+}
+
+.tps-heat {
+  animation: tps-heat 0.9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .tps-flame,
+  .tps-heat {
+    animation: none;
+  }
+}

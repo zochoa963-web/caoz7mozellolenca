@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "TPS — Escudo térmico",
+      "hasCanvas": false,
+      "bodyTextLen": 2354,
+      "bodyTextHash": "25ca9c19ffb27c5d3ac7624cdd4c70f1c5fcba816603486a6a5e9b3280e345f9",
+      "bodyTextPrefix": "TPS Escudo Mezcla Programa Cohete Escudo térmico E.T. LÁMINA DEL",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "TPS — Escudo térmico",
+      "hasCanvas": false,
+      "bodyTextLen": 2354,
+      "bodyTextHash": "25ca9c19ffb27c5d3ac7624cdd4c70f1c5fcba816603486a6a5e9b3280e345f9",
+      "bodyTextPrefix": "TPS Escudo Mezcla Programa Cohete Escudo térmico E.T. LÁMINA DEL",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
